@@ -35,7 +35,7 @@ export default function styles(theme) {
       margin: "auto",
       display: "block",
       width: "100%",
-      padding:'0px 25rem 0px 0px',
+      padding:'0px 25% 0px 0px',
       textAlign: "left",
 
       color: '#63718A',
@@ -68,6 +68,10 @@ export default function styles(theme) {
     },
     ProjectsSection: {
       height: "fit-content",
+      backgroundSize: "contain",
+    },
+    ServicesSection: {
+      margin:'15vh 0vh',
       backgroundSize: "contain",
     },
     heroSectionContent: {

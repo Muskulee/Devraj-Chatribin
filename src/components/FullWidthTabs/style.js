@@ -14,7 +14,7 @@ export default function style(theme) {
           color: theme.palette.text.primary,
         },
         "& h6": {
-          color: theme.palette.text.secondary,
+          color: theme.palette.text.tertiary,
         }
       },
       tab:{

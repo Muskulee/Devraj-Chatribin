@@ -8,108 +8,35 @@ import { ContainedButton } from "../Buttons";
 //Importing Material UI stuff
 import { makeStyles } from "@material-ui/core/styles";
 import { Container, Grid, Divider, Hidden, Typography } from "@material-ui/core";
-
+import { OutlinedButton } from "../../components/Buttons";
 //Importing assets
 
-import linkedInIcon from "../../assets/social-icons/LinkedInIcon.svg";
-import instagramIcon from "../../assets/social-icons/InstagramIcon.svg";
-import youtubeIcon from "../../assets/social-icons/YouTubeIcon.svg";
-import websiteIcon from "../../assets/social-icons/WebsiteIcon.svg";
+import linkedInIcon from "../../assets/social-icons/github.png";
+import instagramIcon from "../../assets/social-icons/github.png";
+import youtubeIcon from "../../assets/social-icons/github.png";
+import websiteIcon from "../../assets/social-icons/github.png";
+
+import GithubLogo from '../../assets/social-icons/github.png'
+import LinkedInLogo from '../../assets/social-icons/linkedin.png'
+import InstagramLogo from '../../assets/social-icons/instagram.png'
 
 const useStyles = makeStyles(style);
 function Footer() {
   const classes = useStyles();
   return (
     <div className={classes.footerBackground}>
-      <Container maxWidth="lg">
-        <Grid container className={classes.footerContent}>
-          <Grid item md={4} xs={12}>
-            <div className={classes.branding}>
-              <div className={classes.brandingLogo}>
-                <img src={linkedInIcon} alt="branding-logo" />
-              </div>
-              <div className={classes.brandingInfo}>
-                <Typography variant="h4" className={classes.brandingTitle}>Design And Code</Typography>
-                <Typography variant="subtitle1" className={classes.brandingDesc}>
-                  Connect, Collaborate, Comprehend
-                </Typography>
-              </div>
-            </div>
-            <div className={classes.getInTouch}>
-              <Typography variant="h6"className={classes.getInTouchTitle}>Get in touch</Typography>
-              <a
-                className={classes.getInTouchEmailLink}
-                href="mailto:designandcode.community@gmail.com"
-              >
-                <Typography variant="h6">designandcode.community@gmail.com</Typography>
-              </a>
-            </div>
-            <div className={classes.socialLinks}>
-              <img src={linkedInIcon} alt="Linked in icon" />
-              <img src={instagramIcon} alt="Instagram icon" />
-              <img src={youtubeIcon} alt="YouTube icon" />
-              <img src={websiteIcon} alt="Website icon" />
-            </div>
-          </Grid>
-          <Grid item md={2} xs={6}>
-            <Typography variant="h6" className={classes.footerSectionTitle}>Home</Typography>
-            <div className={classes.footerLinks}>
-              <ul>
-                <li><Typography variant="subtitle1">Main</Typography></li>
-                <li><Typography variant="subtitle1">What We Offer</Typography></li>
-                <li><Typography variant="subtitle1">Categories</Typography></li>
-                <li><Typography variant="subtitle1">Video</Typography></li>
-              </ul>
-            </div>
-          </Grid>
-
-          <Grid item md={2} xs={6}>
-            <Typography variant="h6" className={classes.footerSectionTitle}>About</Typography>
-            <div className={classes.footerLinks}>
-              <ul>
-                <li><Typography variant="subtitle1">About Us</Typography></li>
-                <li><Typography variant="subtitle1">Team</Typography></li>
-              </ul>
-            </div>
-          </Grid>
-
-          <Grid item md={2} xs={6}>
-            <Typography variant="h6" className={classes.footerSectionTitle}>How To Use</Typography>
-            <div className={classes.footerLinks}>
-              <ul>
-                <li><Typography variant="subtitle1">Rules</Typography></li>
-                <li><Typography variant="subtitle1">Channels</Typography></li>
-                <li><Typography variant="subtitle1">Bots</Typography></li>
-              </ul>
-            </div>
-          </Grid>
-
-          <Grid item md={2} xs={6}>
-            <Typography variant="h6" className={classes.footerSectionTitle}>Support/Contact</Typography>
-            <div className={classes.footerLinks}>
-              <ul>
-                <li><Typography variant="subtitle1">FAQ</Typography></li>
-                <li><Typography variant="subtitle1">Contact</Typography></li>
-              </ul>
-            </div>
-          </Grid>
-        </Grid>
-        <Divider className={classes.divider} />
-        <Grid container className={classes.footerEnd}>
-          <Grid md={10} xs={12}>
-            <Typography variant="subtitle1" className={classes.footerLinks}>
-              @Copyright {new Date().getFullYear()}. All rights reserved.
-            </Typography>
-          </Grid>
-          <Hidden smDown>
-            <Grid xs={2}>
-              <Typography variant="subtitle1" className={classes.joinUsBtn}>
-                <ContainedButton size="large">JOIN US</ContainedButton>
-              </Typography>
-            </Grid>
-          </Hidden>
-        </Grid>
-      </Container>
+      <Typography variant="h2" gutterBottom className={classes.secondaryTitle}>LET’S CONNECT</Typography>
+      <Typography variant="h6" gutterBottom className={classes.footer_desc}>My inbox is always open, Whether you have a question or just want to say hi. I’ll try my best to get back to you!</Typography>
+      <OutlinedButton size="large">
+        Get In Touch
+      </OutlinedButton>
+      <div className="social___icons___footer">
+          <img src={GithubLogo} style={{objectFit:'contain'}} />
+          <img src={LinkedInLogo} style={{objectFit:'contain'}} />
+          <img src={InstagramLogo} style={{objectFit:'contain'}} />
+      </div>
+      <hr width="80%" color="#798396"></hr>
+      <Typography variant="subtitle2" className={classes.footer_desc}>Designed and Developed by<Typography variant="subtitle2" style={{color:'#b6cfff',marginLeft:'5px'}}> Devraj Chatribin.</Typography></Typography>
     </div>
   );
 }

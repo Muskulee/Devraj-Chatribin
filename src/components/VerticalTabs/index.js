@@ -64,7 +64,7 @@ function TabPanel(props) {
               Position @<Typography variant="h5" gutterBottom style={{color:'#5D5FFF'}}>Company Name 1</Typography>
             </Typography>
             <Typography variant="h6" gutterBottom>
-            May 2020 - Present
+              May 2020 - Present
             </Typography>
             <Typography variant="subtitle1" gutterBottom>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor

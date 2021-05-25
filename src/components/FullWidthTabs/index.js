@@ -67,12 +67,12 @@ export default function FullWidthTabs() {
           TabIndicatorProps={{className: classes.tabIndicator}}
           className={classes.tabs}
         >
-          <Tab className={classes.tab} label="Info" {...a11yProps(0)} />
-          <Tab className={classes.tab} label="General" {...a11yProps(1)} />
-          <Tab className={classes.tab} label="Design" {...a11yProps(2)} />
-          <Tab className={classes.tab} label="Development" {...a11yProps(3)} />
-          <Tab className={classes.tab} label="Voice Channels" {...a11yProps(4)} />
-          <Tab className={classes.tab} label="Fun" {...a11yProps(5)} />
+          <Tab className={classes.tab} label="Company Name" {...a11yProps(0)} />
+          <Tab className={classes.tab} label="Company Name" {...a11yProps(1)} />
+          <Tab className={classes.tab} label="Company Name" {...a11yProps(2)} />
+          <Tab className={classes.tab} label="Company Name" {...a11yProps(3)} />
+          <Tab className={classes.tab} label="Company Name" {...a11yProps(4)} />
+          <Tab className={classes.tab} label="Company Name" {...a11yProps(5)} />
         </Tabs>
         <div className={classes.inactiveBorder}></div>
       </Container>
@@ -82,203 +82,107 @@ export default function FullWidthTabs() {
         onChangeIndex={handleChangeIndex}
       >
         <TabPanel value={value} index={0} dir={theme.direction} className={classes.tabpanel}>
-          <Typography variant="h5" gutterBottom>
-            Welcome :
-          </Typography>
-          <Typography variant="subtitle2" gutterBottom>
-            This is Info Bruh...
-          </Typography>
-          <Typography variant="h5" gutterBottom>
-            About and Links:
-          </Typography>
-          <Typography variant="subtitle2" gutterBottom>
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do 
-          </Typography>
-          <Typography variant="h5" gutterBottom>
-            Rules:
-          </Typography>
-          <Typography variant="subtitle2" gutterBottom>
-          Amet minim mollit non deserunt ullamco est sit aliqua dolor
-          do amet sintollit. Exercitation veniam consequat sunt nostrud
-          </Typography>
-          <Typography variant="h5" gutterBottom>
-            Roles:
-          </Typography>
-          <Typography variant="subtitle2" gutterBottom>
-          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mol
-          </Typography>
-          <Typography variant="h5" gutterBottom>
-            Announcements:
-          </Typography>
-          <Typography variant="subtitle2" gutterBottom>
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-          </Typography>
+            <Typography variant="h5" gutterBottom style={{display:'flex'}}>
+              Position @<Typography variant="h5" gutterBottom style={{color:'#5D5FFF'}}>Company Name 1</Typography>
+            </Typography>
+            <Typography variant="h6" gutterBottom>
+              May 2020 - Present
+            </Typography>
+            <Typography variant="subtitle1" gutterBottom>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+            </Typography>
+            <br></br>
+            <Typography variant="subtitle1" gutterBottom>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+            </Typography>
         </TabPanel>
+
+
         <TabPanel value={value} index={1} dir={theme.direction} className={classes.tabpanel}>
-          <Typography variant="h5" gutterBottom>
-            Welcome :
-          </Typography>
-          <Typography variant="subtitle2" gutterBottom>
-            My name is General Khan
-          </Typography>
-          <Typography variant="h5" gutterBottom>
-            About and Links:
-          </Typography>
-          <Typography variant="subtitle2" gutterBottom>
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do 
-          </Typography>
-          <Typography variant="h5" gutterBottom>
-            Rules:
-          </Typography>
-          <Typography variant="subtitle2" gutterBottom>
-          Amet minim mollit non deserunt ullamco est sit aliqua dolor
-          do amet sintollit. Exercitation veniam consequat sunt nostrud
-          </Typography>
-          <Typography variant="h5" gutterBottom>
-            Roles:
-          </Typography>
-          <Typography variant="subtitle2" gutterBottom>
-          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mol
-          </Typography>
-          <Typography variant="h5" gutterBottom>
-            Announcements:
-          </Typography>
-          <Typography variant="subtitle2" gutterBottom>
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-          </Typography>
+            <Typography variant="h5" gutterBottom style={{display:'flex'}}>
+              Position @<Typography variant="h5" gutterBottom style={{color:'#5D5FFF'}}>Company Name 1</Typography>
+            </Typography>
+            <Typography variant="h6" gutterBottom>
+              May 2020 - Present
+            </Typography>
+            <Typography variant="subtitle1" gutterBottom>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+            </Typography>
+            <br></br>
+            <Typography variant="subtitle1" gutterBottom>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+            </Typography>
         </TabPanel>
+
+
         <TabPanel value={value} index={2} dir={theme.direction} className={classes.tabpanel}>
-          <Typography variant="h5" gutterBottom>
-            I am Design Bi*ch
-          </Typography>
-          <Typography variant="subtitle2" gutterBottom>
-            Amet minim mollit non deserunt ullamco est si
-          </Typography>
-          <Typography variant="h5" gutterBottom>
-            About and Links:
-          </Typography>
-          <Typography variant="subtitle2" gutterBottom>
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do 
-          </Typography>
-          <Typography variant="h5" gutterBottom>
-            Rules:
-          </Typography>
-          <Typography variant="subtitle2" gutterBottom>
-          Amet minim mollit non deserunt ullamco est sit aliqua dolor
-          do amet sintollit. Exercitation veniam consequat sunt nostrud
-          </Typography>
-          <Typography variant="h5" gutterBottom>
-            Roles:
-          </Typography>
-          <Typography variant="subtitle2" gutterBottom>
-          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mol
-          </Typography>
-          <Typography variant="h5" gutterBottom>
-            Announcements:
-          </Typography>
-          <Typography variant="subtitle2" gutterBottom>
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-          </Typography>
+           <Typography variant="h5" gutterBottom style={{display:'flex'}}>
+              Position @<Typography variant="h5" gutterBottom style={{color:'#5D5FFF'}}>Company Name 1</Typography>
+            </Typography>
+            <Typography variant="h6" gutterBottom>
+              May 2020 - Present
+            </Typography>
+            <Typography variant="subtitle1" gutterBottom>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+            </Typography>
+            <br></br>
+            <Typography variant="subtitle1" gutterBottom>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+            </Typography>
         </TabPanel>
+
+
         <TabPanel value={value} index={3} dir={theme.direction} className={classes.tabpanel}>
-          <Typography variant="h5" gutterBottom>
-            Welcome :
-          </Typography>
-          <Typography variant="subtitle2" gutterBottom>
-            Me Debhelopment
-          </Typography>
-          <Typography variant="h5" gutterBottom>
-            About and Links:
-          </Typography>
-          <Typography variant="subtitle2" gutterBottom>
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do 
-          </Typography>
-          <Typography variant="h5" gutterBottom>
-            Rules:
-          </Typography>
-          <Typography variant="subtitle2" gutterBottom>
-          Amet minim mollit non deserunt ullamco est sit aliqua dolor
-          do amet sintollit. Exercitation veniam consequat sunt nostrud
-          </Typography>
-          <Typography variant="h5" gutterBottom>
-            Roles:
-          </Typography>
-          <Typography variant="subtitle2" gutterBottom>
-          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mol
-          </Typography>
-          <Typography variant="h5" gutterBottom>
-            Announcements:
-          </Typography>
-          <Typography variant="subtitle2" gutterBottom>
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-          </Typography>
+           <Typography variant="h5" gutterBottom style={{display:'flex'}}>
+              Position @<Typography variant="h5" gutterBottom style={{color:'#5D5FFF'}}>Company Name 1</Typography>
+            </Typography>
+            <Typography variant="h6" gutterBottom>
+              May 2020 - Present
+            </Typography>
+            <Typography variant="subtitle1" gutterBottom>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+            </Typography>
+            <br></br>
+            <Typography variant="subtitle1" gutterBottom>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+            </Typography>
         </TabPanel>
+
+
         <TabPanel value={value} index={4} dir={theme.direction} className={classes.tabpanel}>
-          <Typography variant="h5" gutterBottom>
-            Welcome :
-          </Typography>
-          <Typography variant="subtitle2" gutterBottom>
-            Me hu bhoice channel
-          </Typography>
-          <Typography variant="h5" gutterBottom>
-            About and Links:
-          </Typography>
-          <Typography variant="subtitle2" gutterBottom>
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do 
-          </Typography>
-          <Typography variant="h5" gutterBottom>
-            Rules:
-          </Typography>
-          <Typography variant="subtitle2" gutterBottom>
-          Amet minim mollit non deserunt ullamco est sit aliqua dolor
-          do amet sintollit. Exercitation veniam consequat sunt nostrud
-          </Typography>
-          <Typography variant="h5" gutterBottom>
-            Roles:
-          </Typography>
-          <Typography variant="subtitle2" gutterBottom>
-          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mol
-          </Typography>
-          <Typography variant="h5" gutterBottom>
-            Announcements:
-          </Typography>
-          <Typography variant="subtitle2" gutterBottom>
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-          </Typography>
+           <Typography variant="h5" gutterBottom style={{display:'flex'}}>
+              Position @<Typography variant="h5" gutterBottom style={{color:'#5D5FFF'}}>Company Name 1</Typography>
+            </Typography>
+            <Typography variant="h6" gutterBottom>
+              May 2020 - Present
+            </Typography>
+            <Typography variant="subtitle1" gutterBottom>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+            </Typography>
+            <br></br>
+            <Typography variant="subtitle1" gutterBottom>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+            </Typography>
         </TabPanel>
+
+
         <TabPanel value={value} index={5} dir={theme.direction} className={classes.tabpanel}>
-          <Typography variant="h5" gutterBottom>
-            Welcome :
-          </Typography>
-          <Typography variant="subtitle2" gutterBottom>
-            Hahahahahahaa
-          </Typography>
-          <Typography variant="h5" gutterBottom>
-            About and Links:
-          </Typography>
-          <Typography variant="subtitle2" gutterBottom>
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do 
-          </Typography>
-          <Typography variant="h5" gutterBottom>
-            Rules:
-          </Typography>
-          <Typography variant="subtitle2" gutterBottom>
-          Amet minim mollit non deserunt ullamco est sit aliqua dolor
-          do amet sintollit. Exercitation veniam consequat sunt nostrud
-          </Typography>
-          <Typography variant="h5" gutterBottom>
-            Roles:
-          </Typography>
-          <Typography variant="subtitle2" gutterBottom>
-          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mol
-          </Typography>
-          <Typography variant="h5" gutterBottom>
-            Announcements:
-          </Typography>
-          <Typography variant="subtitle2" gutterBottom>
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-          </Typography>
+           <Typography variant="h5" gutterBottom style={{display:'flex'}}>
+              Position @<Typography variant="h5" gutterBottom style={{color:'#5D5FFF'}}>Company Name 1</Typography>
+            </Typography>
+            <Typography variant="h6" gutterBottom>
+              May 2020 - Present
+            </Typography>
+            <Typography variant="subtitle1" gutterBottom>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+            </Typography>
+            <br></br>
+            <Typography variant="subtitle1" gutterBottom>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+            </Typography>
         </TabPanel>
+
+
       </SwipeableViews>
     </Container>
   );

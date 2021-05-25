@@ -34,9 +34,21 @@ export default function styles(theme) {
       margin: 0,
       marginBottom: 24,
       textAlign: "right",
-       [theme.breakpoints.down("md")]: {
+       [theme.breakpoints.down("xs")]: {
          textAlign: "left",
       },
+    },
+    content:{
+      background: '#121520',
+      padding:'1rem 1rem',
+      width:'125%',
+      marginLeft:'-25%',
+      [theme.breakpoints.down("xs")]: {
+        marginLeft:'0%',
+        width:'100%',
+        padding:'0rem 0rem',
+        background:'transparent'
+     },
     },
     heroSection: {
       height: "65vh",
@@ -63,6 +75,10 @@ export default function styles(theme) {
     categoriesIllustration: {
       
       width: "80%",
+      [theme.breakpoints.down("sm")]: {
+        width:'100%',
+        marginBottom:'10%'
+      }
     },
     video: {
       width: "100%",

@@ -12,3 +12,16 @@ code {
 * {
   font-family: Poppins;
 }
+.social___icons___footer{
+  padding: 2rem 0rem;
+}
+@media only screen and (max-width: 1280px) {
+  .mobile___hidden{
+    display: none !important;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .social___icons___footer{
+    visibility: hidden !important;
+  }
+}

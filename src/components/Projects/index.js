@@ -1,20 +1,23 @@
-import React,{useState, useEffect} from "react";
+import React from "react";
 
 import { Typography, Grid } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 
 //Importing Components
-import categoriesIllustration from "../../assets/illustrations/categoriesIllustration.svg";
+
 import style from "./style";
+
+import GithubEx from '../../assets/social-icons/githubEx.png'
+import ExLink from '../../assets/social-icons/external-link.png'
 
 const useStyles = makeStyles(style);
 
-function Member({ image, title, text, stack}) {
+function Projects({ image, title, text, stack, githubLink, liveLink}) {
   const classes = useStyles();
   
   return (
-    <Grid container className={classes.section}>
-        <Grid container xs={12} sm={6}>
+    <Grid container className={classes.section} alignItems="flex-start">
+        <Grid container xs={12} sm={6} alignItems="flex-start" >
           <img
             src={image}
             className={classes.categoriesIllustration}
@@ -25,7 +28,7 @@ function Member({ image, title, text, stack}) {
           <Typography variant="h4" className={`${classes.subtitle} ${classes.textAlignLeft}`}>
             {title}
           </Typography>
-          <div style={{background: '#121520',padding:'1rem 1rem',width:'125%',marginLeft:'-25%'}}>
+          <div className={classes.content}>
             <Typography 
                 variant="h6"
                 className={`${classes.description} ${classes.secondaryDesc} ${classes.textAlignLeft}`}
@@ -39,10 +42,14 @@ function Member({ image, title, text, stack}) {
                 {stack}
             </Typography>
           </div>
+          <div className={classes.textAlignLeft}>
+            <a href={githubLink}><img src={GithubEx} style={{margin:'1rem 0.5rem'}} /></a>
+            <a href={liveLink}><img src={ExLink} style={{margin:'1rem 0.5rem'}} /></a>
+          </div>
         </Grid>
         
     </Grid>
   );
 }
 
-export default Member;
+export default Projects;

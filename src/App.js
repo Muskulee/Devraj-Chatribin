@@ -27,11 +27,11 @@ function Content() {
   const [theme, setTheme] = useState(createMuiTheme(darkTheme));
 
   window.addEventListener('mousemove',(e)=>{
-    document.getElementById('diver').style.top = (e.clientY) + 'px' 
-    document.getElementById('diver').style.left = (e.clientX) + 'px'
+    document.getElementById('diver').style.top = (e.pageY) + 'px' 
+    document.getElementById('diver').style.left = (e.pageX) + 'px'
     
-    document.getElementById('small').style.top = (e.clientY) + 'px' 
-    document.getElementById('small').style.left = (e.clientX) + 'px'
+    document.getElementById('small').style.top = (e.pageY) + 'px' 
+    document.getElementById('small').style.left = (e.pageX) + 'px'
   })
   
   return (

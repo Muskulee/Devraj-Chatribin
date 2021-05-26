@@ -1,3 +1,4 @@
+
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
@@ -11,9 +12,125 @@ code {
 
 * {
   font-family: Poppins;
+  cursor: none;
 }
 .social___icons___footer{
   padding: 2rem 0rem;
+}
+.mobile___hidden > img:hover{
+  transform: translateY(-5px);
+  transition: 0.5s;
+}
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #162034;
+  color: white;
+}
+#logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: fill 0.5s ease forwards 3.5s;
+}
+#logo path:nth-child(1) {
+  stroke-dasharray: 556.74px;
+  stroke-dashoffset: 556.74px;
+  animation: line-anim 3s ease forwards;
+}
+#logo path:nth-child(2) {
+  stroke-dasharray: 517.28px;
+  stroke-dashoffset: 517.28px;
+  animation: line-anim 3s ease forwards 0.3s;
+}
+#logo path:nth-child(3) {
+  stroke-dasharray: 428.81px;
+  stroke-dashoffset: 428.81px;
+  animation: line-anim 3s ease forwards 0.6s;
+}
+#logo path:nth-child(4) {
+  stroke-dasharray: 568.1px;
+  stroke-dashoffset: 568.1px;
+  animation: line-anim 3s ease forwards 0.9s;
+}
+#logo path:nth-child(5) {
+  stroke-dasharray: 490.2px;
+  stroke-dashoffset: 490.2px;
+  animation: line-anim 3s ease forwards 1.2s;
+}
+#logo path:nth-child(6) {
+  stroke-dasharray: 260.77px;
+  stroke-dashoffset: 260.77px;
+  animation: line-anim 3s ease forwards 1.5s;
+}
+
+@keyframes line-anim {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes fill {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: white;
+  }
+}
+.preloader {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  z-index: 100;
+  transition: all 0.5s ease;
+  animation: removePreloader 0.5s ease;
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+}
+#logo {
+  width: 100%;
+  padding: 0 20px;
+}
+
+#diver{
+  cursor:none;
+  pointer-events: none;
+  position:absolute;
+  z-index:10;
+  height:3rem;
+  width:3rem;
+  transform:translate(-50%,-50%);
+  border:2px solid white;
+  border-radius:50%;
+  transition:0.3s;
+}
+#small{
+  cursor:none;
+  pointer-events: none;
+  position:absolute;
+  z-index:10;
+  height:1rem;
+  width:1rem;
+  transform:translate(-50%,-50%);
+  background:white;
+  border-radius:50%;
+  transition:0.2s;
+}
+
+@keyframes removePreloader {
+  from {
+    opacity: 1;
+    pointer-events: all;
+  }
+  to {
+    opacity: 0;
+    pointer-events: none;
+  }
 }
 @media only screen and (max-width: 1280px) {
   .mobile___hidden{

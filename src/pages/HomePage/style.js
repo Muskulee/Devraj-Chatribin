@@ -59,7 +59,8 @@ export default function styles(theme) {
       "-webkit-text-stroke-color":"#B6CFFF", 
     },
     heroSection: {
-      height: "120vh",
+      height: "80vh",
+      margin:'10vh 0vh',
       backgroundSize: "contain",
     },
     ExpSection: {
@@ -71,7 +72,7 @@ export default function styles(theme) {
       backgroundSize: "contain",
     },
     ServicesSection: {
-      margin:'15vh 0vh',
+      margin:'10vh 0vh',
       backgroundSize: "contain",
     },
     heroSectionContent: {

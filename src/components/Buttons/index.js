@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 
 import style from "./style";
 
@@ -27,12 +27,16 @@ function ContainedButton(props) {
 function OutlinedButton(props) {
   const classes = useStyles();
   const { size } = props;
+  
+  const [background, setBackground] = useState("#B6CFFF")
 
   return (
     <Button
-      {...props}
-      style={{ padding: size === "large" ? "9px 50px" : "5px 22px" }}
+      
+      style={{ padding: size === "large" ? "9px 50px" : "5px 22px" ,color: background}}
       className={classes.outlinedBtn}
+      onMouseEnter={()=>{setBackground("#5D5FEF")}}
+      onMouseLeave={()=>{setBackground("#B6CFFF")}}
       variant="outlined"
     >
       {props.children}

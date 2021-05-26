@@ -7,10 +7,9 @@ export default function style(theme) {
       flexDirection:'column',
       alignItems:'center',
       justifyContent:'center',
-      
     },
     secondaryTitle:{
-      paddingTop:'3rem',
+      paddingTop:'2rem',
       fontWeight:'600',
       "-webkit-text-fill-color":"transparent", /*Will override color (regardless of order) */
       "-webkit-text-stroke-width":"1px",
@@ -18,7 +17,7 @@ export default function style(theme) {
     },
     footer_desc: {
       display:'flex',
-      padding:'2rem 0rem',
+      padding:'2rem 0rem ',
       justifyContent:'center',
       textAlign:'center',
       width:'45%',

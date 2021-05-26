@@ -33,6 +33,15 @@
       #root{
         background: #0D0F19;
       }
+      body::-webkit-scrollbar {
+        display: none;
+      }
+
+      /* Hide scrollbar for IE, Edge and Firefox */
+      body{
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+      }
     </style>
     <title>React App</title>
   </head>

@@ -11,14 +11,11 @@ import { Container, Grid, Divider, Hidden, Typography } from "@material-ui/core"
 import { OutlinedButton } from "../../components/Buttons";
 //Importing assets
 
-import linkedInIcon from "../../assets/social-icons/github.png";
-import instagramIcon from "../../assets/social-icons/github.png";
-import youtubeIcon from "../../assets/social-icons/github.png";
-import websiteIcon from "../../assets/social-icons/github.png";
 
-import GithubLogo from '../../assets/social-icons/github.png'
-import LinkedInLogo from '../../assets/social-icons/linkedin.png'
-import InstagramLogo from '../../assets/social-icons/instagram.png'
+
+import GithubLogo from '../../assets/social-icons/github.svg'
+import LinkedInLogo from '../../assets/social-icons/linkedin.svg'
+import InstagramLogo from '../../assets/social-icons/instagram.svg'
 
 const useStyles = makeStyles(style);
 function Footer() {
@@ -35,8 +32,8 @@ function Footer() {
           <img src={LinkedInLogo} style={{objectFit:'contain'}} />
           <img src={InstagramLogo} style={{objectFit:'contain'}} />
       </div>
-      <hr width="80%" color="#798396"></hr>
-      <Typography variant="subtitle2" className={classes.footer_desc}>Designed and Developed by<Typography variant="subtitle2" style={{color:'#b6cfff',marginLeft:'5px'}}> Devraj Chatribin.</Typography></Typography>
+      <hr width="80%" color="#798396" style={{opacity:'0.4'}}></hr>
+      <Typography variant="subtitle2" className={classes.footer_desc}>Designed and Developed by<span style={{color:'#b6cfff',marginLeft:'5px'}}> Devraj Chatribin.</span></Typography>
     </div>
   );
 }

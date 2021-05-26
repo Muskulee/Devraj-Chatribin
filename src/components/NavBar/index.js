@@ -58,11 +58,6 @@ function NavBar(props) {
       <AppBar 
         position="sticky" 
         className={classes.appBar} 
-        style={trigger ? {
-          backdropFilter: "blur(20px)",} : {
-          background: `transparent`,
-          backdropFilter: "none"}
-        }
       >
         <Container className={classes.navBarBackground}>
           <Grid container className={classes.navBar}>

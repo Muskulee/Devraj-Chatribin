@@ -7,8 +7,8 @@ import { makeStyles } from "@material-ui/core/styles";
 
 import style from "./style";
 
-import GithubEx from '../../assets/social-icons/githubEx.png'
-import ExLink from '../../assets/social-icons/external-link.png'
+import GithubEx from '../../assets/social-icons/githubEx.svg'
+import ExLink from '../../assets/social-icons/external-link.svg'
 
 const useStyles = makeStyles(style);
 

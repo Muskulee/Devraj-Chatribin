@@ -2,7 +2,9 @@ export default function style(theme) {
   return {
     appBar: {
       boxShadow: "none",
-      transition: "0.7s"
+      transition: "0.7s",
+      backdropFilter:'blur(5px)',
+      background:'transparent !important'
     },
     navBar: {
       padding: "15px 0",

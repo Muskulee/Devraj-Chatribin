@@ -17,9 +17,26 @@ code {
 .social___icons___footer{
   padding: 2rem 0rem;
 }
-.mobile___hidden > img:hover{
+.mobile___hidden > svg:hover {
   transform: translateY(-5px);
   transition: 0.5s;
+  cursor:pointer;
+}
+.mobile___hidden > svg:hover > g > path, .svg-links > path {
+  stroke:#5D5FEF;
+}
+
+.vertical___text{
+  writing-mode: vertical-rl;
+  text-orientation:mixed;
+  color:#63718A;
+  margin-bottom:1rem;
+}
+.vertical___text:hover{
+  color:#5D5FEF;
+  transform: translateY(-5px);
+  transition: 0.5s;
+  cursor:pointer;
 }
 body {
   width: 100%;
@@ -75,7 +92,7 @@ body {
     fill: transparent;
   }
   to {
-    fill: white;
+    fill: #5D5FEF;
   }
 }
 .MuiAppBar-root{
@@ -99,7 +116,9 @@ body {
   width: 100%;
   padding: 0 20px;
 }
-
+.MuiAppBar-positionSticky > div{
+  padding:0rem 0rem !important
+}
 
 
 @keyframes removePreloader {
@@ -119,6 +138,6 @@ body {
 }
 @media only screen and (min-width: 800px) {
   .social___icons___footer{
-    visibility: hidden !important;
+    display: none !important;
   }
 }

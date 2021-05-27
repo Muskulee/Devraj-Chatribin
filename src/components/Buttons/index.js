@@ -29,15 +29,15 @@ function OutlinedButton(props) {
   const { size } = props;
   
   const [background, setBackground] = useState("#5D5FEF")
-  const [color, setColor] = useState("black")
+  const [color, setColor] = useState("transparent")
 
   return (
     <Button
       
-      style={{ padding: size === "large" ? "9px 50px" : "5px 22px" ,color: background, background: color}}
+      style={{ padding: size === "large" ? "9px 50px" : "9px 50px" ,color: background, background: color}}
       className={classes.outlinedBtn}
       onMouseEnter={()=>{setBackground("#B6CFFF");setColor("#5D5FEF")}}
-      onMouseLeave={()=>{setBackground("#5D5FEF");setColor("black")}}
+      onMouseLeave={()=>{setBackground("#5D5FEF");setColor("transparent")}}
       variant="outlined"
     >
       {props.children}

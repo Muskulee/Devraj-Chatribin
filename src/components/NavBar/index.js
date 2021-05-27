@@ -15,8 +15,7 @@ import {
   Drawer,
   List,
   ListItem,
-  ListItemIcon,
-  ListItemText,
+
   Divider,
   useScrollTrigger,
   Typography
@@ -69,7 +68,7 @@ function NavBar(props) {
               />
             </Grid>
             <Grid container xs={9}>
-              <Hidden smDown>
+              <Hidden mdDown>
                 <div className={classes.navLinks}>
                   {routesData.map((data, index) => (
                     <div key={`link-index-${index}`}>

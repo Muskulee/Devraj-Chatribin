@@ -8,8 +8,19 @@ export default function style(theme) {
       alignItems:'center',
       justifyContent:'center',
     },
+    footerBackground__main:{
+      margin:'2rem 0rem 3rem 0rem',
+      width:'100%', 
+      display:'flex',
+      justifyContent:'center', 
+      alignItems:'center',
+      flexDirection:'column',
+      [theme.breakpoints.down("sm")]: {
+        margin:'2rem 0rem 0rem 0rem',
+      },
+    },
     secondaryTitle:{
-      paddingTop:'2rem',
+      paddingTop:'1rem',
       fontWeight:'600',
       "-webkit-text-fill-color":"transparent", /*Will override color (regardless of order) */
       "-webkit-text-stroke-width":"1px",

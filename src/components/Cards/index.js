@@ -14,7 +14,7 @@ function Cards({ image, title, text }) {
   const classes = useStyles();
   
   return (
-        <Grid container xs={12} sm={4} alignItems="flex-start" style={{paddingLeft:'1rem',paddingBottom:'3rem'}} >
+        <Grid container xs={12} sm={4} alignItems="flex-start" style={{paddingLeft:'0rem',paddingBottom:'3rem',paddingRight:'1rem'}} >
           <img
             src={image}
             className={classes.categoriesIllustration}

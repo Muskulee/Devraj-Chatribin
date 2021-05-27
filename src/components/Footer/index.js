@@ -22,11 +22,13 @@ function Footer() {
   const classes = useStyles();
   return (
     <div className={classes.footerBackground}>
-      <Typography variant="h2" gutterBottom className={classes.secondaryTitle}>LET’S CONNECT</Typography>
-      <Typography variant="h6" gutterBottom className={classes.footer_desc}>My inbox is always open, Whether you have a question or just want to say hi. I’ll try my best to get back to you!</Typography>
-      <OutlinedButton size="large">
-        Get In Touch
-      </OutlinedButton>
+      <div className={classes.footerBackground__main}>
+        <Typography variant="h2" gutterBottom className={classes.secondaryTitle}>LET’S CONNECT</Typography>
+        <Typography variant="h6" gutterBottom className={classes.footer_desc}>My inbox is always open, Whether you have a question or just want to say hi. I’ll try my best to get back to you!</Typography>
+        <OutlinedButton size="large">
+          Get In Touch
+        </OutlinedButton>
+      </div>
       <div className="social___icons___footer">
           <img src={GithubLogo} style={{objectFit:'contain'}} />
           <img src={LinkedInLogo} style={{objectFit:'contain'}} />

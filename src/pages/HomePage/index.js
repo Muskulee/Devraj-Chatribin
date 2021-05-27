@@ -55,9 +55,7 @@ function HomePage() {
           </div>
           
         </div>
-          <div style={{display:'flex',justifyContent:'center'}}>
-            <img src={scrollIcon}/>
-          </div>
+          
       </Grid>
       
       {/* Experience Section */}
@@ -87,11 +85,13 @@ function HomePage() {
        {/* Services Section */}
        <Grid container className={`${classes.section} ${classes.ServicesSection}`}>
           <Typography variant="h2" gutterBottom style={{padding:'5rem 0rem'}}  className={classes.secondaryTitle}>SERVICES</Typography>
-          <Grid container className={classes.section}>
-              <Cards image={Monitor} title={"Web Development"} text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud."} />
-              <Cards image={UXDesign} title={"UI/UX Designing"} text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud."} />
-              <Cards image={GraphicD} title={"Graphic Designing"} text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud."} />
-          </Grid>
+         
+            <Grid container className={classes.section} >
+                <Cards image={Monitor} title={"Web Development"} text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud."} />
+                <Cards image={UXDesign} title={"UI/UX Designing"} text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud."} />
+                <Cards image={GraphicD} title={"Graphic Designing"} text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud."} />
+            </Grid>
+  
       </Grid>
 
       

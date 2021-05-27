@@ -32,7 +32,7 @@ export default function styles(theme) {
     },
     textAlignLeft: {
       margin: 0,
-      marginBottom: 24,
+      marginBottom: 20,
       textAlign: "right",
        [theme.breakpoints.down("xs")]: {
          textAlign: "left",
@@ -40,7 +40,7 @@ export default function styles(theme) {
     },
     content:{
       background: '#121520',
-      padding:'1rem 1rem',
+      padding:'1rem 1rem 0.2rem 1rem',
       width:'125%',
       marginLeft:'-25%',
       [theme.breakpoints.down("xs")]: {

@@ -37,8 +37,10 @@ export default function styles(theme) {
       width: "100%",
       padding:'0px 25% 0px 0px',
       textAlign: "left",
-
       color: '#63718A',
+      [theme.breakpoints.down("sm")]: {
+        padding:'0px 10% 0px 0px',
+       }
     },
     secondaryDesc: {
       color: theme.palette.text.secondary,

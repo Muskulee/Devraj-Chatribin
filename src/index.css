@@ -22,7 +22,12 @@ code {
   transition: 0.5s;
   cursor:pointer;
 }
-.mobile___hidden > svg:hover > g > path, .svg-links > path {
+.svg-links:hover > path {
+  stroke:#63718A;
+}
+
+.mobile___hidden > svg:hover > g > path, .svg-links:hover > path {
+  transition: 0.5s;
   stroke:#5D5FEF;
 }
 

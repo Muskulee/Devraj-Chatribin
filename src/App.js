@@ -88,8 +88,8 @@ function Content() {
       <div class="container">
         <Router >
           <div style={{width:'100%',padding:'0rem 0rem'}}>
-            <NavBar />
-            <div className="mobile___hidden" style={{position:'fixed',bottom:'1%',left:'2%',display:'flex',flexDirection:'column',alignItems:'center'}}>
+            
+            <div className="mobile___hidden" style={{position:'fixed',bottom:'0%',left:'2%',display:'flex',flexDirection:'column',alignItems:'center'}}>
               <img src={GithubLogo} style={{objectFit:'contain'}} />
               <img src={LinkedInLogo} style={{objectFit:'contain'}} />
               <img src={InstagramLogo} style={{objectFit:'contain'}} />
@@ -97,19 +97,17 @@ function Content() {
             </div>
             
             <Container style={{maxWidth:'1150px'}}>
+            <NavBar />
               <Routes />
             </Container>
             <Footer/>
 
-            <div className="mobile___hidden" style={{position:'fixed',bottom:'1%',right:'2%',display:'flex',flexDirection:'column',alignItems:'center'}}>
+            <div className="mobile___hidden" style={{position:'fixed',bottom:'0%',right:'2%',display:'flex',flexDirection:'column',alignItems:'center'}}>
               <div style={{writingMode: 'vertical-rl',textOrientation:'mixed',color:'#63718A',marginBottom:'1rem'}}>devrajchatribin9978@gmail.com</div>
               <div style={{width:'0.125rem',height:'8rem',background:'#63718A'}}></div>
             </div>
           </div>
-          <div id="diver">
-          </div>
-          <div id="small">
-          </div>
+         
         </Router>
       </div>
     </section>

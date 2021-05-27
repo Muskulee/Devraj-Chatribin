@@ -78,6 +78,9 @@ body {
     fill: white;
   }
 }
+.MuiAppBar-root{
+  z-index: 1 !important;
+}
 .preloader {
   position: fixed;
   width: 100%;
@@ -86,7 +89,7 @@ body {
   justify-content: center;
   align-items: center;
   background: black;
-  z-index: 100;
+  z-index: 1200;
   transition: all 0.5s ease;
   animation: removePreloader 0.5s ease;
   animation-delay: 4s;
@@ -97,30 +100,7 @@ body {
   padding: 0 20px;
 }
 
-#diver{
-  cursor:none;
-  pointer-events: none;
-  position:absolute;
-  z-index:10;
-  height:3rem;
-  width:3rem;
-  transform:translate(-50%,-50%);
-  border:2px solid white;
-  border-radius:50%;
-  transition:0.3s;
-}
-#small{
-  cursor:none;
-  pointer-events: none;
-  position:absolute;
-  z-index:10;
-  height:1rem;
-  width:1rem;
-  transform:translate(-50%,-50%);
-  background:white;
-  border-radius:50%;
-  transition:0.2s;
-}
+
 
 @keyframes removePreloader {
   from {

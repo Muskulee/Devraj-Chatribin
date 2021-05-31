@@ -20,6 +20,7 @@ export default function style(theme) {
       },
     },
     secondaryTitle:{
+      fontFamily:'philosopher',
       paddingTop:'1rem',
       fontWeight:'600',
       "-webkit-text-fill-color":"transparent", /*Will override color (regardless of order) */

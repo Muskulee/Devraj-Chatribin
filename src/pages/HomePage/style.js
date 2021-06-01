@@ -1,8 +1,6 @@
 export default function styles(theme) {
   return {
-    homePage:{
-      background:'#0D0F19'
-    },
+    
     section: {
       alignItems: "center",
       justifyContent: "center",
@@ -17,6 +15,7 @@ export default function styles(theme) {
       textAlign: "left",
       fontWeight:'600',
       color:'#5D5FEF',
+      fontFamily:'philosopher'
     },
     stitle: {
       display: "block",
@@ -24,6 +23,7 @@ export default function styles(theme) {
       textAlign: "left",
       fontWeight:'600',
       color:'#B6CFFF',
+      fontFamily:'philosopher'
     },
     subtitle: {
       display: "block",
@@ -36,6 +36,7 @@ export default function styles(theme) {
       display: "block",
       width: "100%",
       padding:'0px 25% 0px 0px',
+      fontSize:'1rem',
       textAlign: "left",
       color: '#63718A',
       [theme.breakpoints.down("sm")]: {
@@ -55,6 +56,7 @@ export default function styles(theme) {
       // },
     },
     secondaryTitle:{
+      fontFamily:'philosopher',
       fontWeight:'600',
       "-webkit-text-fill-color":"transparent", /*Will override color (regardless of order) */
       "-webkit-text-stroke-width":"1px",

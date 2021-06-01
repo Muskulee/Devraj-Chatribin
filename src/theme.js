@@ -19,8 +19,8 @@ const darkTheme = {
     text: {
       secondary: "#5D5FFF",
       primary: "#B6CFFF",
-      tertiary: "#63718A"
-
+      tertiary: "#63718A",
+      strokedFont:'philosopher'
     },
     contrastThreshold: 3,
     tonalOffset: 0.2,
@@ -146,7 +146,7 @@ const darkTheme = {
       [theme.breakpoints.down("sm")]: {
         fontSize:  "0.25rem",
       },
-    }
+    },
   },
   
 };

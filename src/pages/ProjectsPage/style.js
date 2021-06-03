@@ -30,13 +30,13 @@ export default function styles(theme) {
     },
     cardSection: {
       maxWidth: "100vw",
-      height: "80vh",
+      height: "60vh",
       display: "flex",
       flexDirection: "row",
       flexWrap: "wrap",
       justifyContent: "space-between",
       [theme.breakpoints.down("sm")]: {
-        height: "100vh",
+        height: "110vh",
         alignContent: "center",
       },
     },
@@ -66,7 +66,7 @@ export default function styles(theme) {
       width: 461,
       position: "relative",
       [theme.breakpoints.down("sm")]: {
-        marginTop: "40px",
+        margin: "20px auto",
       },
     },
     alignedCard: {

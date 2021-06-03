@@ -2,44 +2,45 @@ export default function style(theme) {
   return {
     footerBackground: {
       backgroundColor: "#121520",
-      width:'100%',
-      display:'flex',
-      flexDirection:'column',
-      alignItems:'center',
-      justifyContent:'center',
+      width: "100%",
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "center",
+      justifyContent: "center",
     },
-    footerBackground__main:{
-      margin:'2rem 0rem 3rem 0rem',
-      width:'100%', 
-      display:'flex',
-      justifyContent:'center', 
-      alignItems:'center',
-      flexDirection:'column',
+    footerBackground__main: {
+      margin: "2rem 0rem 3rem 0rem",
+      width: "100%",
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+      flexDirection: "column",
       [theme.breakpoints.down("sm")]: {
-        margin:'2rem 0rem 0rem 0rem',
+        margin: "2rem 0rem 0rem 0rem",
       },
     },
-    secondaryTitle:{
-      fontFamily:'philosopher',
-      paddingTop:'1rem',
-      fontWeight:'600',
-      "-webkit-text-fill-color":"transparent", /*Will override color (regardless of order) */
-      "-webkit-text-stroke-width":"1px",
-      "-webkit-text-stroke-color":"#B6CFFF", 
+    secondaryTitle: {
+      fontFamily: "philosopher",
+      paddingTop: "1rem",
+      fontWeight: "600",
+      letterSpacing: "5px",
+      "-webkit-text-fill-color":
+        "transparent" /*Will override color (regardless of order) */,
+      " -webkit-text-stroke": " .1px #B6CFFF",
     },
     footer_desc: {
-      display:'flex',
-      padding:'2rem 0rem ',
-      justifyContent:'center',
-      textAlign:'center',
-      width:'45%',
+      display: "flex",
+      padding: "2rem 0rem ",
+      justifyContent: "center",
+      textAlign: "center",
+      width: "45%",
       [theme.breakpoints.down("md")]: {
-        width:'60%',
+        width: "60%",
       },
       [theme.breakpoints.down("sm")]: {
-        width:'80%',
+        width: "80%",
       },
-      color: theme.palette.text.tertiary
-    }
-  }
+      color: theme.palette.text.tertiary,
+    },
+  };
 }

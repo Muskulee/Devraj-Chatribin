@@ -1,6 +1,5 @@
 export default function styles(theme) {
   return {
-    
     section: {
       alignItems: "center",
       justifyContent: "center",
@@ -13,17 +12,17 @@ export default function styles(theme) {
       display: "block",
       width: "100%",
       textAlign: "left",
-      fontWeight:'600',
-      color:'#5D5FEF',
-      fontFamily:'philosopher'
+      fontWeight: "600",
+      color: "#5D5FEF",
+      fontFamily: "philosopher",
     },
     stitle: {
       display: "block",
       width: "100%",
       textAlign: "left",
-      fontWeight:'600',
-      color:'#B6CFFF',
-      fontFamily:'philosopher'
+      fontWeight: "600",
+      color: "#B6CFFF",
+      fontFamily: "philosopher",
     },
     subtitle: {
       display: "block",
@@ -35,13 +34,13 @@ export default function styles(theme) {
       margin: "auto",
       display: "block",
       width: "100%",
-      padding:'0px 25% 0px 0px',
-      fontSize:'1rem',
+      padding: "0px 25% 0px 0px",
+      fontSize: "1rem",
       textAlign: "left",
-      color: '#63718A',
+      color: "#63718A",
       [theme.breakpoints.down("sm")]: {
-        padding:'0px 10% 0px 0px',
-       }
+        padding: "0px 10% 0px 0px",
+      },
     },
     secondaryDesc: {
       color: theme.palette.text.secondary,
@@ -55,16 +54,17 @@ export default function styles(theme) {
       //   textAlign: "center",
       // },
     },
-    secondaryTitle:{
-      fontFamily:'philosopher',
-      fontWeight:'600',
-      "-webkit-text-fill-color":"transparent", /*Will override color (regardless of order) */
-      "-webkit-text-stroke-width":"1px",
-      "-webkit-text-stroke-color":"#B6CFFF", 
+    secondaryTitle: {
+      fontFamily: "philosopher",
+      fontWeight: "600",
+      letterSpacing: "5px",
+      "-webkit-text-fill-color":
+        "transparent" /*Will override color (regardless of order) */,
+      " -webkit-text-stroke": " .1px #B6CFFF",
     },
     heroSection: {
       height: "80vh",
-      margin:'10vh 0vh',
+      margin: "10vh 0vh",
       backgroundSize: "contain",
     },
     ExpSection: {
@@ -76,7 +76,7 @@ export default function styles(theme) {
       backgroundSize: "contain",
     },
     ServicesSection: {
-      margin:'10vh 0vh',
+      margin: "10vh 0vh",
       backgroundSize: "contain",
     },
     heroSectionContent: {
@@ -89,7 +89,7 @@ export default function styles(theme) {
       gap: 40,
       marginTop: 54,
       [theme.breakpoints.down("sm")]: {
-         gap: 18,
+        gap: 18,
       },
     },
     categoriesSection: {

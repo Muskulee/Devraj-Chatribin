@@ -36,7 +36,7 @@ export default function styles(theme) {
       flexWrap: "wrap",
       justifyContent: "space-between",
       [theme.breakpoints.down("sm")]: {
-        height: "120vh",
+        height: "100vh",
         alignContent: "center",
       },
     },
@@ -50,7 +50,7 @@ export default function styles(theme) {
       maxWidth: 461,
       height: 250,
       background:
-        "linear-gradient(115.68deg, rgba(0, 0, 0, 0.3) 0%, rgba(93, 95, 239, 0.3) 100%), 0deg, #000000, #000000",
+        "linear-gradient(115.68deg, rgba(0, 0, 0, 0.3) 0%, rgba(93, 95, 239, 0.3) 100%)",
     },
     cardNum: {
       position: "absolute",

@@ -38,9 +38,10 @@ const darkTheme = {
       },
     },
     h2: {
-      fontSize: "3.75rem",      
+      fontSize: "5.6rem",      
       fontWeight: 500,
       lineHeight: 1.2,
+      textAlign: "center",
       letterSpacing: "-0.00833em",
       [theme.breakpoints.down("sm")]: {
         fontSize:  "2.50rem",

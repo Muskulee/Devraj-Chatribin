@@ -55,12 +55,16 @@ export default function styles(theme) {
       // },
     },
     secondaryTitle: {
+      fontSize: "5.6rem",
       fontFamily: "philosopher",
       fontWeight: "bold",
       letterSpacing: "5px",
       "-webkit-text-fill-color":
         "transparent" /*Will override color (regardless of order) */,
-      " -webkit-text-stroke": " .1px #63718A",
+      " -webkit-text-stroke": " 1px #63718A",
+      [theme.breakpoints.down("sm")]: {
+        fontSize:  "3.5rem",
+      },
     },
     heroSection: {
       height: "80vh",

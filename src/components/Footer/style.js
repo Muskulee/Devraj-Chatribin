@@ -20,21 +20,26 @@ export default function style(theme) {
       },
     },
     secondaryTitle: {
+      fontSize: "5.6rem",
       fontFamily: "philosopher",
-      paddingTop: "1rem",
       fontWeight: "bold",
-      margin: "0",
+      textAlign: "center",
+      margin: "0rem",
       letterSpacing: "5px",
       "-webkit-text-fill-color":
         "transparent" /*Will override color (regardless of order) */,
-      " -webkit-text-stroke": " .1px #63718A",
+      " -webkit-text-stroke": " 1px #63718A",
+      [theme.breakpoints.down("sm")]: {
+        fontSize:  "3.5rem",
+      },
     },
     footer_desc: {
       display: "flex",
       padding: "2rem 0rem ",
       justifyContent: "center",
       textAlign: "center",
-      width: "40%",
+      fontWeight: "400",
+      width: "45%",
       [theme.breakpoints.down("md")]: {
         width: "60%",
       },

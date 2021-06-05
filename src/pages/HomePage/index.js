@@ -83,6 +83,7 @@ function HomePage() {
               View All My Work
             </OutlinedButton>
           </div>
+          </Grid>
       </Grid>
 
        {/* Services Section */}
@@ -94,11 +95,8 @@ function HomePage() {
                 <Cards image={UXDesign} title={"UI/UX Designing"} text={"Designing user-centric, modern interfaces that shapes how the audience interacts with the product."} />
                 <Cards image={GraphicD} title={"Graphic Designing"} text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."} />
             </Grid>
-  
       </Grid>
-
       
-      </Grid>
     </div>
   );
 }

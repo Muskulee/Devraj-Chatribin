@@ -39,7 +39,7 @@ export default function styles(theme) {
     content:{
       background: '#090B11',
       padding:'1rem 1rem 0.2rem 1rem',
-      width:'125%',
+      width:'120%',
       [theme.breakpoints.down("xs")]: {
         marginLeft:'0%',
         width:'100%',
@@ -64,22 +64,39 @@ export default function styles(theme) {
          gap: 18,
       },
     },
-    categoriesSection: {
-      // [theme.breakpoints.down("sm")]: {
-      //   display: "flex",
-      // },
-    },
     categoriesIllustration: {
-      width: "80%",
-      [theme.breakpoints.down("sm")]: {
-        width:'100%',
-        marginBottom:'10%',
-        marginLeft: 0
-      }
+      width: "100%",
+      height: "100%",
+      objectFit: "cover",
+    },
+    categoriesSection:{
+      zIndex: "1",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "flex-start",
     },
     imageContainer: {
       display: "flex",
       justifyContent: "flex-end",
+      position: "relative",
+      zIndex: "0",
+      
+      [theme.breakpoints.down("sm")]: {
+        marginBottom:'2rem',
+      }
+    },
+    imageOverlay:{
+      position: "absolute",
+      height: "100%",
+      width: "100%",
+      opacity: 0.2,
+      transition: ".5s ease",
+      backgroundColor: "rgba(255, 0, 0, 0.45)",
+      backgroundColor: "#5D5FEF",
+      "&:hover":{
+        cursor: "pointer",
+        opacity: 0,
+      },
     },
     video: {
       width: "100%",

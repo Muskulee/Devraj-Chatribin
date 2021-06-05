@@ -24,6 +24,7 @@ export default function styles(theme) {
       display: "block",
       width: "80%",
       textAlign: "center",
+      fontSize: "1rem",
       color: theme.palette.text.tertiary
     },
     secondaryDesc: {
@@ -39,7 +40,7 @@ export default function styles(theme) {
       },
     },
     content:{
-      background: '#121520',
+      background: '#090B11',
       padding:'1rem 1rem 0.2rem 1rem',
       width:'125%',
       marginLeft:'-25%',

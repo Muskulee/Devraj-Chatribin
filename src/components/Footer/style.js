@@ -1,7 +1,7 @@
 export default function style(theme) {
   return {
     footerBackground: {
-      backgroundColor: "#121520",
+      backgroundColor: "#090B11",
       width: "100%",
       display: "flex",
       flexDirection: "column",
@@ -22,18 +22,19 @@ export default function style(theme) {
     secondaryTitle: {
       fontFamily: "philosopher",
       paddingTop: "1rem",
-      fontWeight: "600",
+      fontWeight: "bold",
+      margin: "0",
       letterSpacing: "5px",
       "-webkit-text-fill-color":
         "transparent" /*Will override color (regardless of order) */,
-      " -webkit-text-stroke": " .1px #B6CFFF",
+      " -webkit-text-stroke": " .1px #63718A",
     },
     footer_desc: {
       display: "flex",
       padding: "2rem 0rem ",
       justifyContent: "center",
       textAlign: "center",
-      width: "45%",
+      width: "40%",
       [theme.breakpoints.down("md")]: {
         width: "60%",
       },
@@ -42,5 +43,15 @@ export default function style(theme) {
       },
       color: theme.palette.text.tertiary,
     },
+    footer_author: {
+      display: "flex",
+      padding: "2rem 0rem ",
+      justifyContent: "center",
+      textAlign: "center",
+      width: "100%",
+      [theme.breakpoints.down("sm")]: {
+        display: "block"
+      },
+    }
   };
 }

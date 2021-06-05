@@ -56,11 +56,11 @@ export default function styles(theme) {
     },
     secondaryTitle: {
       fontFamily: "philosopher",
-      fontWeight: "600",
+      fontWeight: "bold",
       letterSpacing: "5px",
       "-webkit-text-fill-color":
         "transparent" /*Will override color (regardless of order) */,
-      " -webkit-text-stroke": " .1px #B6CFFF",
+      " -webkit-text-stroke": " .1px #63718A",
     },
     heroSection: {
       height: "80vh",

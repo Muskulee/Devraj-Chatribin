@@ -25,7 +25,7 @@ function Projects({ image, title, text, stack, githubLink, liveLink}) {
           />
         </Grid>
         <Grid xs={12} sm={6} className={classes.categoriesSection}>
-          <Typography variant="h4" className={`${classes.subtitle} ${classes.textAlignLeft}`}>
+          <Typography variant="h5" className={`${classes.subtitle} ${classes.textAlignLeft}`}>
             {title}
           </Typography>
           <div className={classes.content}>
@@ -42,7 +42,7 @@ function Projects({ image, title, text, stack, githubLink, liveLink}) {
                 {stack}
             </Typography>
           </div>
-          <div className={classes.textAlignLeft}>
+          <div className={classes.textAlignLeft} style={{margin:'0rem'}}>
           <a href="https://indicov.co">
             <svg className="svg-links" width="33" height="32" viewBox="0 0 33 32" fill="none" style={{margin:'1rem 0.5rem'}} xmlns="http://www.w3.org/2000/svg">
               <path d="M21.3689 30.3336V25.1736C21.4189 24.5378 21.3331 23.8986 21.1171 23.2986C20.9012 22.6986 20.5602 22.1515 20.1166 21.6936C24.2998 21.2269 28.6962 19.6402 28.6962 12.3602C28.6958 10.4987 27.9803 8.70851 26.6978 7.36024C27.3051 5.73158 27.2622 3.93137 26.5779 2.33358C26.5779 2.33358 25.0059 1.86691 21.3689 4.30691C18.3155 3.47867 15.0968 3.47867 12.0433 4.30691C8.40637 1.86691 6.83435 2.33358 6.83435 2.33358C6.15008 3.93137 6.10714 5.73158 6.71445 7.36024C5.42236 8.71851 4.70615 10.5249 4.71611 12.4002C4.71611 19.6269 9.11245 21.2136 13.2956 21.7336C12.8573 22.1869 12.5193 22.7275 12.3035 23.3201C12.0878 23.9128 11.9991 24.5443 12.0433 25.1736V30.3336M12.0433 26.3336C5.38222 28.3336 5.38222 23.0002 2.71777 22.3336L12.0433 26.3336Z" stroke="#B6CFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>

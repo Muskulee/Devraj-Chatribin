@@ -34,8 +34,8 @@ function Footer() {
           <img src={LinkedInLogo} style={{objectFit:'contain'}} />
           <img src={InstagramLogo} style={{objectFit:'contain'}} />
       </div>
-      <hr width="80%" color="#798396" style={{opacity:'0.4'}}></hr>
-      <Typography variant="subtitle2" className={classes.footer_desc}>Designed and Developed by<span style={{color:'#b6cfff',marginLeft:'5px'}}> Devraj Chatribin.</span></Typography>
+      <hr width="80%" color="#63718A" style={{opacity:'0.2'}}></hr>
+      <Typography variant="subtitle2" style={{color:'#63718A'}} className={classes.footer_author}>Designed and Developed by<span style={{color:'#b6cfff',marginLeft:'5px'}}> Devraj Chatribin.</span></Typography>
     </div>
   );
 }

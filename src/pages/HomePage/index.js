@@ -2,7 +2,7 @@ import React,{useEffect,useState} from "react";
 
 //Importing Material UI stuff
 import { makeStyles } from "@material-ui/core/styles";
-import { Grid, Typography } from "@material-ui/core";
+import { Button, Grid, Typography } from "@material-ui/core";
 
 //Importing Components
 import { OutlinedButton } from "../../components/Buttons";
@@ -49,12 +49,12 @@ function HomePage() {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
           </Typography>
           <div className={classes.heroBtns}>
-            <OutlinedButton size="large">
+            <Button className={classes.aboutBtn} variant="contained" size="large">
               About Me
-            </OutlinedButton>
-            <OutlinedButton size="large">
+            </Button>
+            <Button className={classes.projectBtn} size="large">
               My Projects
-            </OutlinedButton>
+            </Button>
           </div>
           
         </div>

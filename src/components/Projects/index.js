@@ -16,20 +16,20 @@ function Projects({ image, title, text, stack, githubLink, liveLink}) {
   const classes = useStyles();
   
   return (
-    <Grid container className={classes.section} alignItems="flex-start">
-        <Grid container xs={12} sm={6} alignItems="flex-start" >
+    <Grid container  direction="row-reverse" className={classes.section}>
+        <Grid item xs={12} sm={6} className={classes.imageContainer}>
           <img
             src={image}
             className={classes.categoriesIllustration}
             alt="Categories Illustration"
           />
         </Grid>
-        <Grid xs={12} sm={6} className={classes.categoriesSection}>
+        <Grid item xs={12} sm={6} className={classes.categoriesSection}>
           <Typography variant="h5" className={`${classes.subtitle} ${classes.textAlignLeft}`}>
             {title}
           </Typography>
           <div className={classes.content}>
-            <Typography 
+            <Typography
                 variant="h6"
                 className={`${classes.description} ${classes.secondaryDesc} ${classes.textAlignLeft}`}
             >

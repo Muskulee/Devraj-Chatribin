@@ -2,9 +2,10 @@ export default function style(theme) {
   return {
     appBar: {
       boxShadow: "none",
+      zIndex: "10",
       transition: "0.7s",
       backdropFilter:'blur(5px)',
-      background:'transparent !important'
+      background:'rgba(0, 0, 0, 0.4) !important'
     },
     navBar: {
       padding: "15px 0",
@@ -12,13 +13,22 @@ export default function style(theme) {
     brandingLogo: {
       width: 50,
     },
+    profilePicHolder:{
+      display:"flex",
+      justifyContent: "center",
+    },
+    profilePic:{
+      borderRadius: "100%",
+      border: "1px solid #5D5FEF",
+      margin: "2rem auto"
+    },
     navLinks: {
       height: "100%",
       width: "100%",
       display: "flex",
       justifyContent: "flex-end",
       alignItems: "center",
-      gap: 70,
+      gap: 80,
     },
     navLink: {
       textDecoration: "none",
@@ -37,17 +47,20 @@ export default function style(theme) {
     menuBtn: {
       color: theme.palette.primary.gradient1,
     },
+    mobileDrawer:{
+      width: "80%",
+    },
     mobileNav: {
       background: theme.palette.primary.main,
       height: "100%",
     },
-    // branding: {
-    //   display: "grid",
-    //   gridTemplateColumns: "auto 1fr",
-    // },
     brandingTitle: {
       color: theme.palette.text.primary,
       ...theme.palette.text.gradient
+    },
+    brandingDesc: {
+      margin: "0.2rem 0rem 0.5rem",
+      color: theme.palette.text.tertiary,
     },
     listItem: {
       padding: "12px 16px",

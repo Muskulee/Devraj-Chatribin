@@ -26,6 +26,7 @@ import routesData from "../../routes/routesData";
 
 //Importing assets
 import brandingLogo from "../../assets/branding-logos/dc logo.png";
+import profilePic from "../../assets/branding-logos/profile pic.png";
 
 //Importing Components
 import { ContainedButton, OutlinedButton } from "../Buttons";
@@ -121,13 +122,13 @@ function NavBar(props) {
         <List className={classes.mobileNav}>
           <ListItem>
             <div className={classes.branding}>
-              <div className={classes.brandingLogo}>
-                <img src={brandingLogo} alt="branding-logo" />
+              <div className={classes.profilePicHolder}>
+                <img className={classes.profilePic} src={profilePic} alt="branding-logo" />
               </div>
               <div className={classes.brandingInfo}>
-                <Typography variant="h4" className={classes.brandingTitle}>Design And Code</Typography>
-                <Typography variant="subtitle2" className={classes.brandingDesc}>
-                  Connect, Collaborate, Comprehend
+                <Typography variant="h4" className={classes.brandingTitle}>Devraj Chatribin</Typography>
+                <Typography variant="subtitle1" className={classes.brandingDesc}>
+                  Web Developer | UI/UX Designer
                 </Typography>
               </div>
             </div>
@@ -161,7 +162,7 @@ function NavBar(props) {
               target="_blank"
               className={classes.mobileJoinDiscordBtn}
             >
-              <Typography variant="h6">Join Discord</Typography>
+              <Typography variant="h6">Resume</Typography>
             </ContainedButton>
             
           </ListItem>

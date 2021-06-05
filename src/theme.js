@@ -5,7 +5,7 @@ const theme = createMuiTheme();
 const darkTheme = {
   palette: {
     primary: {
-      main: "#121415",
+      main: "#090B11",
       blurColor: "rgb(64 113 222 / 67%)",
       backgroundBlurColor: "rgba(32, 38, 48, 0.5)",
       gradient1: "#5D5FEF",

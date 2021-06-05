@@ -70,7 +70,7 @@ export default function styles(theme) {
       objectFit: "cover",
     },
     categoriesSection:{
-      zIndex: "1",
+      zIndex: "0",
       display: "flex",
       alignItems: "center",
       justifyContent: "flex-start",

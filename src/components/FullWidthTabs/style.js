@@ -9,7 +9,7 @@ export default function style(theme) {
       },
       tabpanel: {
         color: "white",
-        padding: 16,
+        padding: "20px 0px",
         "& h5": {
           color: theme.palette.text.primary,
         },

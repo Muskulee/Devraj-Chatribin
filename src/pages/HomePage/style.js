@@ -68,7 +68,6 @@ export default function styles(theme) {
     },
     heroSection: {
       height: "80vh",
-      margin: "10vh 0vh",
       backgroundSize: "contain",
     },
     ExpSection: {

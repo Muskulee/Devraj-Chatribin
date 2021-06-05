@@ -55,6 +55,8 @@ export default function styles(theme) {
       fontFamily: "philosopher",
       fontWeight: "bold",
       letterSpacing: "5px",
+      margin: "0rem",
+      padding:"5rem 0rem",
       "-webkit-text-fill-color":
         "transparent" /*Will override color (regardless of order) */,
       " -webkit-text-stroke": " 1px #63718A",
@@ -67,7 +69,7 @@ export default function styles(theme) {
       backgroundSize: "contain",
     },
     ExpSection: {
-      height: "100vh",
+      height: "fit-content",
       backgroundSize: "contain",
     },
     ProjectsSection: {
@@ -77,9 +79,6 @@ export default function styles(theme) {
     ServicesSection: {
       margin: "10vh 0vh",
       backgroundSize: "contain",
-    },
-    heroSectionContent: {
-      width: "100%",
     },
     heroBtns: {
       display: "flex",
@@ -114,11 +113,6 @@ export default function styles(theme) {
         backgroundColor: "#5D5FEF",
         color: "#B6CFFF"
       }
-    },
-    categoriesSection: {
-      // [theme.breakpoints.down("sm")]: {
-      //   display: "flex",
-      // },
     },
     categoriesIllustration: {
       marginLeft: "auto",

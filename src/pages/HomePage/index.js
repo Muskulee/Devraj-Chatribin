@@ -46,7 +46,7 @@ function HomePage() {
           <Typography variant="h2" className={classes.title}>Devraj Chatribin.</Typography>
           <Typography variant="h2" gutterBottom className={classes.stitle}>I build things for web.</Typography>
           <Typography variant="h6" gutterBottom className={classes.description}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
           </Typography>
           <div className={classes.heroBtns}>
             <Button className={classes.aboutBtn} variant="contained" size="large">

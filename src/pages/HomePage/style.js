@@ -31,15 +31,14 @@ export default function styles(theme) {
       ...theme.palette.text.gradient,
     },
     description: {
-      margin: "auto",
+      margin: "0rem",
       display: "block",
-      width: "100%",
-      padding: "0px 25% 0px 0px",
+      width: "60%",
       fontSize: "1rem",
       textAlign: "left",
       color: "#63718A",
       [theme.breakpoints.down("sm")]: {
-        padding: "0px 10% 0px 0px",
+        width: "100%"
       },
     },
     secondaryDesc: {
@@ -50,9 +49,6 @@ export default function styles(theme) {
       margin: 0,
       marginBottom: 24,
       textAlign: "left",
-      // [theme.breakpoints.down("sm")]: {
-      //   textAlign: "center",
-      // },
     },
     secondaryTitle: {
       fontSize: "5.6rem",
@@ -90,7 +86,7 @@ export default function styles(theme) {
       width: "100%",
       justifyContent: "start",
       gap: 20,
-      marginTop: 54,
+      marginTop: 40,
       [theme.breakpoints.down("sm")]: {
         gap: 18,
       },
@@ -100,10 +96,11 @@ export default function styles(theme) {
       color: "#B6CFFF",
       width: 180,
       height: 50,
+      borderRadius: 4,
       "&:hover": {
         backgroundColor: "transparent",
         border: "2px solid #5D5FEF",
-        borderRadius: 4
+        color: "#5D5FEF"
       }
     },
     projectBtn: {
@@ -115,7 +112,7 @@ export default function styles(theme) {
       borderRadius: 4,
       "&:hover": {
         backgroundColor: "#5D5FEF",
-      color: "#B6CFFF",
+        color: "#B6CFFF"
       }
     },
     categoriesSection: {

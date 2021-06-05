@@ -1,11 +1,11 @@
 export default function style(theme) {
   return {
     outlinedBtn: {
-      borderRadius: 5,
+      borderRadius: "4",
       height: "fit-content",
       textTransform: "unset !important",
       border: `2px solid #5D5FEF`,
-      fontSize:'0.8rem',
+      fontSize:'1rem',
       color: '#5D5FEF',
       background: '#B6CFFF',
       fontWeight: 500,

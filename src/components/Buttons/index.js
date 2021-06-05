@@ -33,7 +33,6 @@ function OutlinedButton(props) {
 
   return (
     <Button
-      
       style={{ padding: size === "large" ? "9px 35px" : "9px 50px" ,color: background, background: color}}
       className={classes.outlinedBtn}
       onMouseEnter={()=>{setBackground("#B6CFFF");setColor("#5D5FEF")}}

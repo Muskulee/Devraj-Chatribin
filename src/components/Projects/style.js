@@ -80,7 +80,6 @@ export default function styles(theme) {
     imageContainer: {
       display: "flex",
       justifyContent: "flex-end",
-      backgroudColor: "red"
     },
     video: {
       width: "100%",

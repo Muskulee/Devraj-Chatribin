@@ -17,7 +17,7 @@ function Projects({ image, title, text, stack, githubLink, liveLink}) {
   
   return (
     <Grid container  direction="row-reverse" className={classes.section}>
-        <Grid item xs={12} sm={6} className={classes.imageContainer}>
+        <Grid item xs={12} sm={6} className={classes.imageContainer} >
           <img
             src={image}
             className={classes.categoriesIllustration}

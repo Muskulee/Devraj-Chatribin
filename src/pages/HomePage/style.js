@@ -93,26 +93,38 @@ export default function styles(theme) {
     aboutBtn: {
       backgroundColor: "#5D5FEF",
       color: "#B6CFFF",
-      width: 180,
+      fontSize: "1rem",
+      width: 160,
       height: 50,
       borderRadius: 4,
       "&:hover": {
         backgroundColor: "transparent",
         border: "2px solid #5D5FEF",
         color: "#5D5FEF"
-      }
+      },
+      [theme.breakpoints.down("sm")]: {
+        fontSize: "0.8rem",
+        width: 160,
+        height: 45,
+      },
     },
     projectBtn: {
       backgroundColor: "transparent",
       border: "2px solid #5D5FEF",
       color: "#5D5FEF",
-      width: 180,
+      fontSize: "1rem",
+      width: 160,
       height: 50,
       borderRadius: 4,
       "&:hover": {
         backgroundColor: "#5D5FEF",
         color: "#B6CFFF"
-      }
+      },
+      [theme.breakpoints.down("sm")]: {
+        fontSize: "0.8rem",
+        width: 160,
+        height: 45,
+      },
     },
     categoriesIllustration: {
       marginLeft: "auto",
@@ -122,7 +134,6 @@ export default function styles(theme) {
       width: "100%",
       [theme.breakpoints.down("sm")]: {
         height: 300,
-        // display: "flex",
       },
     },
     videoDesc: {

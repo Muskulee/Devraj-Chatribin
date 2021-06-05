@@ -90,11 +90,34 @@ export default function styles(theme) {
       display: "flex",
       width: "100%",
       justifyContent: "start",
-      gap: 40,
+      gap: 20,
       marginTop: 54,
       [theme.breakpoints.down("sm")]: {
         gap: 18,
       },
+    },
+    aboutBtn: {
+      backgroundColor: "#5D5FEF",
+      color: "#B6CFFF",
+      width: 180,
+      height: 50,
+      "&:hover": {
+        backgroundColor: "transparent",
+        border: "2px solid #5D5FEF",
+        borderRadius: 4
+      }
+    },
+    projectBtn: {
+      backgroundColor: "transparent",
+      border: "2px solid #5D5FEF",
+      color: "#5D5FEF",
+      width: 180,
+      height: 50,
+      borderRadius: 4,
+      "&:hover": {
+        backgroundColor: "#5D5FEF",
+      color: "#B6CFFF",
+      }
     },
     categoriesSection: {
       // [theme.breakpoints.down("sm")]: {

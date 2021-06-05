@@ -2,8 +2,6 @@
 export default function styles(theme) {
   return {
     section: {
-      alignItems: "center",
-      justifyContent: "center",
       marginBottom: 120,
     },
     title: {
@@ -16,7 +14,6 @@ export default function styles(theme) {
     subtitle: {
       display: "block",
       width: "100%",
-      textAlign: "center",
       color:theme.palette.text.primary
     },
     description: {
@@ -34,7 +31,7 @@ export default function styles(theme) {
     textAlignLeft: {
       margin: 0,
       marginBottom: 20,
-      textAlign: "right",
+      textAlign: "left",
        [theme.breakpoints.down("xs")]: {
          textAlign: "left",
       },
@@ -43,7 +40,6 @@ export default function styles(theme) {
       background: '#090B11',
       padding:'1rem 1rem 0.2rem 1rem',
       width:'125%',
-      marginLeft:'-25%',
       [theme.breakpoints.down("xs")]: {
         marginLeft:'0%',
         width:'100%',
@@ -74,12 +70,17 @@ export default function styles(theme) {
       // },
     },
     categoriesIllustration: {
-      
       width: "80%",
       [theme.breakpoints.down("sm")]: {
         width:'100%',
-        marginBottom:'10%'
+        marginBottom:'10%',
+        marginLeft: 0
       }
+    },
+    imageContainer: {
+      display: "flex",
+      justifyContent: "flex-end",
+      backgroudColor: "red"
     },
     video: {
       width: "100%",

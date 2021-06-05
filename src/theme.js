@@ -38,7 +38,7 @@ const darkTheme = {
       },
     },
     h2: {
-      fontSize: "5.6rem",      
+      fontSize: "4rem",      
       fontWeight: 500,
       lineHeight: 1.2,
       textAlign: "center",

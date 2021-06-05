@@ -95,7 +95,7 @@ export default function styles(theme) {
       color: "#B6CFFF",
       fontSize: "1rem",
       width: 160,
-      height: 50,
+      height: 45,
       borderRadius: 4,
       "&:hover": {
         backgroundColor: "transparent",
@@ -104,8 +104,6 @@ export default function styles(theme) {
       },
       [theme.breakpoints.down("sm")]: {
         fontSize: "0.8rem",
-        width: 160,
-        height: 45,
       },
     },
     projectBtn: {
@@ -114,7 +112,7 @@ export default function styles(theme) {
       color: "#5D5FEF",
       fontSize: "1rem",
       width: 160,
-      height: 50,
+      height: 45,
       borderRadius: 4,
       "&:hover": {
         backgroundColor: "#5D5FEF",
@@ -122,8 +120,6 @@ export default function styles(theme) {
       },
       [theme.breakpoints.down("sm")]: {
         fontSize: "0.8rem",
-        width: 160,
-        height: 45,
       },
     },
     categoriesIllustration: {
